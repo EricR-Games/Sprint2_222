@@ -1,51 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>IMS222 HTML/CSS Exercise</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <!--Import Google Icon Font-->
+    <meta charset="UTF-8">
+    <title>About Us - Benny & The Jets</title>
+    <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	 
+      <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+
+    </script>
+    <style>
+       
+
+    </style>
 </head>
 
 <body>
-
-    
-<div class="wrapper">
+    <div class="wrapper">
 
     <!-- 2. add <header> for image/navigation bar here. see the instruction to add the code -->
 <header>
-	 <h1>Disruptive Reality</h1>
+<h1>Disruptive Reality</h1>
     <h3>Acknowledging Virtual Reality’s Disruptive Existence</h3>
-	 <nav class="nav-extended">
+  <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down">
 	<li><a href="index.html" >Home</a></li>
-	<li><a href="ContactUs.html">Contact Us</a></li>
-	<li><a href="AboutUs.html">About Us</a></li>
-	<li><a href="FAQ.html">FAQ</a></li>
+	<li><a href="ContactUs.html" >Contact Us</a></li>
+	<li><a href="AboutUs.html" >About Us</a></li>
+	<li><a href="FAQ.html" >FAQ</a></li>
 	<li><a href="information.html" class="current">Information</a></li>
       </ul>
     </div>
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-              <li><a href="#what-is-VR"> What is VR</a></li>
-                <li><a href="#examples-of-vr">Examples of VR</a></li>
-                <li><a href="#history">History of VR</a></li>
-                <li><a href="#cited">Works Cited</a></li>
-      </ul>
-    </div>
   </nav>
-
+    <ul class="sidenav" id="mobile-demo">
+	<li><a href="index.html" >Home</a></li>
+	<li><a href="ContactUs.html" >Contact Us</a></li>
+	<li><a href="AboutUs.html" class="current">About Us</a></li>
+	<li><a href="FAQ.html" >FAQ</a></li>
+	<li><a href="information.html">Information</a></li>
+  </ul>
+        
  </header>
  <ul>
  
