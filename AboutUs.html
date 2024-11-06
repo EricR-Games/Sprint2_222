@@ -3,42 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <title>About Us - Benny & The Jets</title>
+    
+    <!--baseline css-->
+    <link rel="stylesheet" href="home.css">
+    
     <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-    });
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+      
+
     <style>
-       
+ .brand-logo img {height: 64px;}
 
     </style>
 </head>
-
 <body>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script>
+         $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
+            $('.scrollspy').scrollSpy()
+        });
+      $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>
+    
+    
     <div class="wrapper">
 
     <!-- 2. add <header> for image/navigation bar here. see the instruction to add the code -->
 <header>
-<h1>Disruptive Reality</h1>
-    <h3>Acknowledging Virtual Reality’s Disruptive Existence</h3>
-  <nav>
+    <block>
+        
+            <h1>Disruptive Reality</h1>
+        
+        
+            <h3>Acknowledging Virtual Reality’s Disruptive Existence</h3>
+        
+    </block>
+  <nav class="magenta">
     <div class="nav-wrapper">
-	    <img src="Bene%20Logo.png" width=90>
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo"><img class="responsive-img" src="Bene%20Logo.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
 	<li><a href="index.html" >Home</a></li>
@@ -49,21 +73,90 @@
       </ul>
     </div>
   </nav>
-    <ul class="sidenav" id="mobile-demo">
-	<li><a href="index.html" >Home</a></li>
-	<li><a href="ContactUs.html" >Contact Us</a></li>
-	<li><a href="AboutUs.html" class="current">About Us</a></li>
-	<li><a href="FAQ.html" >FAQ</a></li>
-	<li><a href="information.html">Information</a></li>
+    <ul class="sidenav grey darken-3" id="mobile-demo">
+	<li><a href="index.html" class="white-text" >Home</a></li>
+	<li><a href="ContactUs.html" class="white-text" >Contact Us</a></li>
+	<li><a href="AboutUs.html" class="current white-text">About Us</a></li>
+	<li><a href="FAQ.html" class="white-text">FAQ</a></li>
+	<li><a href="information.html" class="white-text">Information</a></li>
   </ul>
         
  </header>
     
-        <h2>Meet Ben-E & The Jets!</h2>
+        <h2 class="textShadow">Meet Ben-E & The Jets!</h2>
 
+       <section class="slider z-depth-4">
+        <ul class="slides z-depth-4">
+            <li>
+                <img src="Head Shots IMS222/p1.jpeg" > 
+                <div class="caption center-align">
+                    <h1>AJ Hathaway</h1>
+                    <h5 class="light magenta-text">Colorblind</h5>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="Head Shots IMS222/p2.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h1>Ben Oesterly</h1>
+                    <h5 class="light magenta-text">I am a drummer.</h5>
+                    
+
+                </div>
+            </li>
+            <li>
+                <img class="responsive-img" src="Head Shots IMS222/p3.JPG"> <!-- random image -->
+                <div class="caption right-align">
+                    <h1>Benedicta Gyan</h1>
+                    <h5 class="light magenta-text">I love reading thriller/horror books.</h5>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="Head Shots IMS222/p4.jpeg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h1>Christian Tarzia</h1>
+                    <h5 class="light magenta-text">Might Not Exist.</h5>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="Head Shots IMS222/p4.jpeg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h1>Christian Tarzia Again</h1>
+                    <h5 class="light magenta-text">Still Might Not Exist.</h5>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="Head Shots IMS222/p5.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h1>Drew Brown</h1>
+                    <h5 class="light magenta-text">I've worn glasses since the first grade.</h5>
+                   
+                </div>
+            </li>
+            <li>
+                <img src="Head Shots IMS222/p6.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h1>Eric Rademacher</h1>
+                    <h5 class="light magenta-text">I've sung in choirs since 6th grade.</h5>
+                   
+                </div>
+            </li>
+            <li>
+                <img src="Head Shots IMS222/p7.jpeg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h1>Nolan Blume</h1>
+                    <h5 class="light magenta-text">My first job was working at a ski shop.</h5>
+                    
+                </div>
+            </li>
+            
+        </ul>
+    </section>
     
-
-    <div class="container">
+   <!--<div class="container">
         <div class="team-member">
             <img src="Head%20Shots%20IMS222/Nolan%20Blume.jpeg" alt="Nolan Blume">
             <h3>Nolan Blume</h3>
@@ -126,12 +219,14 @@
             <p><strong>Year:</strong> Freshman at MU</p>
             <p class="fun-fact"><strong>Fun Fact:</strong> I've sung in choirs since 6th grade.</p>
         </div>
+    </div>-->
     </div>
-    </div>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js">
+    </script>
 </body>
-	 <footer class="page-footer">
-          <div class="container">
+
+	 <footer class="magenta" class="page-footer">
+          <div class="container magenta">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
@@ -149,11 +244,11 @@
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container">
+            <div class="container magenta">
             © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-          </div>
+         </div>
         </footer>
 
 </html>

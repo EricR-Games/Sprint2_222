@@ -1,108 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>FAQ</title>
+    
+    <title>About Us - Benny & The Jets</title>
+    
+    <!--baseline css-->
+    <link rel="stylesheet" href="home.css">
+    
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+      
+
     <style>
-        /* No additional styles needed */
+            .brand-logo img {height: 64px;}
+ 
+
     </style>
 </head>
-
 <body>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script>
+         $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
+            $('.scrollspy').scrollSpy();
+             $('.collapsible').collapsible();
+        });
+      $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>
+    
+    
     <div class="wrapper">
-        <header>
-            <h1>Disruptive Reality</h1>
-            <h3>Acknowledging Virtual Reality's Disruptive Existence</h3>
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Logo</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
-                        <li><a href="AboutUs.html">About Us</a></li>
-                        <li><a href="FAQ.html" class="current">FAQ</a></li>
-                        <li><a href="information.html">Information</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <article>
-            <h2 class="Top">Frequently Asked Questions</h2>
 
-            <ul class="collapsible">
+    <!-- 2. add <header> for image/navigation bar here. see the instruction to add the code -->
+<header>
+    <block>
+        
+            <h1>Disruptive Reality</h1>
+        
+        
+            <h3>Acknowledging Virtual Reality’s Disruptive Existence</h3>
+        
+    </block>
+  <nav class="magenta">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img class="responsive-img" src="Bene%20Logo.png"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+	<li><a href="index.html" >Home</a></li>
+	<li><a href="ContactUs.html" >Contact Us</a></li>
+	<li><a href="AboutUs.html" class="current">About Us</a></li>
+	<li><a href="FAQ.html" >FAQ</a></li>
+	<li><a href="information.html">Information</a></li>
+      </ul>
+    </div>
+  </nav>
+    <ul class="sidenav grey darken-3" id="mobile-demo">
+	<li><a href="index.html" class="white-text" >Home</a></li>
+	<li><a href="ContactUs.html" class="white-text" >Contact Us</a></li>
+	<li><a href="AboutUs.html" class="current white-text">About Us</a></li>
+	<li><a href="FAQ.html" class="white-text">FAQ</a></li>
+	<li><a href="information.html" class="white-text">Information</a></li>
+  </ul>
+        
+ </header>
+        
+       <article>
+           <div class="container grey darken-3">
+   <h2 class="Top textShadow">Frequently Asked Questions</h2>
+   
+   
+	       <ul class="collapsible">
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">expand_more</i>What is Virtual Reality?</div>
-                    <div class="collapsible-body">
-                        <p class="faq">Virtual Reality(VR) is a tool used by many companies to simulate situations. These simulations are attached to a headset, which will literally put you into a simulated environment.</p>
-                    </div>
+                    <div class="collapsible-header grey darken-3 white-text"><i class="material-icons white-text">subject</i>What is Virtual Reality?</div>
+                    <div class="collapsible-body grey darken-3 white-text"><span>Virtual Reality(VR) is a tool used by many companies to simulate situations. These simulations are attached to a headset, which will literally put you into a simulated environment</span></div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">expand_more</i>What companies have used VR?</div>
-                    <div class="collapsible-body">
-                        <p class="faq">Playstation, Oculus, Metaverse, Apple along with many others.</p>
-                    </div>
+                    <div class="collapsible-header grey darken-3 white-text"><i class="material-icons white-text">subject</i>What companies have used VR?</div>
+                    <div class="collapsible-body grey darken-3 white-text"><span>Playstation, Oculus, Metaverse, Apple along with many others.</span></div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">expand_more</i>How does VR affect our lives now?</div>
-                    <div class="collapsible-body">
-                        <p class="faq">VR has become big in the business world. Companies like Playstation made VR into a way to play their games. Similarly Oculus has their VR headset to play VR games not associated with Playstation. Metaverse uses their VR headsets to help workers practice their occupation before going into the real world. This along with many more have integrated VR into their business.</p>
-                    </div>
+                    <div class="collapsible-header grey darken-3 white-text"><i class="material-icons white-text">subject</i>How does VR affect our lives now?</div>
+                    <div class="collapsible-body grey darken-3 white-text"><span>VR has become big in the business world. Companies like Playstation made VR into a way to play their games. Similarly Oculus has their VR headset to play VR games not associated with Playstation. Metaverse uses their VR headsets to help workers practice their occupation before going into the real world. This along with many more have integrated VR into their business.</span></div>
+                </li>
+                               <li>
+                    <div class="collapsible-header grey darken-3 white-text"><i class="material-icons white-text">subject</i>Is VR expensive?</div>
+                    <div class="collapsible-body grey darken-3 white-text"><span>Short answer, Yes. Longer answer: one must buy the hardware (the headset itself) which can typically be around $300 to $700. Then you must get the software that connects to the VR headset, this can be games or other such things.</span></div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Is VR expensive?</div>
-                    <div class="collapsible-body">
-                        <p class="faq">Short answer, Yes. Longer answer: one must buy the hardware (the headset itself) which can typically be around $300 to $700. Then you must get the software that connects to the VR headset, this can be games or other such things.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">expand_more</i>Is VR for children?</div>
-                    <div class="collapsible-body">
-                        <p class="faq">VR is not for everyone. Being put into a simulated environment where things are completely different can be disorienting. This can cause nausea, or in bad cases vertigo. Yes, children can use it, just be sure they are in a safe environment.</p>
-                    </div>
+                    <div class="collapsible-header grey darken-3 white-text"><i class="material-icons white-text">subject</i>Is VR for children?</div>
+                    <div class="collapsible-body grey darken-3 white-text"><span>VR is not for everyone. Being put into a simulated environment where things are completely different can be disorienting. This can cause nausea, or in bad cases vertigo. Yes, children can use it, just be sure they are in a safe environment.</span></div>
                 </li>
             </ul>
-        </article>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.collapsible');
-                var instances = M.Collapsible.init(elems, {
-                    accordion: false
-                });
-            });
-        </script>
+</div>
+       </article>
+
     </div>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
+    <script type="text/javascript" src="js/materialize.min.js">
+    </script>
 </body>
+
+	 <footer class="magenta" class="page-footer">
+          <div class="container magenta">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container magenta">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+         </div>
+        </footer>
+
 </html>
+

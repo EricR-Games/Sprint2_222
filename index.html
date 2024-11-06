@@ -3,113 +3,129 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    
+    <title>About Us - Benny & The Jets</title>
+    
+    <!--baseline css-->
+    <link rel="stylesheet" href="home.css">
+    
     <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-    });
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+      
+
     <style>
-       
+ .brand-logo img {height: 64px;}
 
     </style>
 </head>
-
 <body>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script>
+         $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
+            $('.scrollspy').scrollSpy()
+        });
+      $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>
+    
+    
     <div class="wrapper">
 
     <!-- 2. add <header> for image/navigation bar here. see the instruction to add the code -->
 <header>
-<h1>Disruptive Reality</h1>
-    <h3>Acknowledging Virtual Reality’s Disruptive Existence</h3>
-  <nav>
+   <block>
+        
+            <h1>Disruptive Reality</h1>
+        
+        
+            <h3>Acknowledging Virtual Reality’s Disruptive Existence</h3>
+        
+    </block>
+  <nav class="magenta">
     <div class="nav-wrapper">
-	    <img src="Bene%20Logo.png" width=90>
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo"><img class="responsive-img" src="Bene%20Logo.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-	<li><a href="index.html" class="current">Home</a></li>
+	<li><a href="index.html" >Home</a></li>
 	<li><a href="ContactUs.html" >Contact Us</a></li>
-	<li><a href="AboutUs.html" >About Us</a></li>
+	<li><a href="AboutUs.html" class="current">About Us</a></li>
 	<li><a href="FAQ.html" >FAQ</a></li>
 	<li><a href="information.html">Information</a></li>
       </ul>
     </div>
   </nav>
-    <ul class="sidenav" id="mobile-demo">
-	<li><a href="index.html" class="current">Home</a></li>
-	<li><a href="ContactUs.html" >Contact Us</a></li>
-	<li><a href="AboutUs.html" >About Us</a></li>
-	<li><a href="FAQ.html" >FAQ</a></li>
-	<li><a href="information.html">Information</a></li>
+    <ul class="sidenav grey darken-3" id="mobile-demo">
+	<li><a href="index.html" class="white-text" >Home</a></li>
+	<li><a href="ContactUs.html" class="white-text" >Contact Us</a></li>
+	<li><a href="AboutUs.html" class="current white-text">About Us</a></li>
+	<li><a href="FAQ.html" class="white-text">FAQ</a></li>
+	<li><a href="information.html" class="white-text">Information</a></li>
   </ul>
-        
+   
  </header>
-    <!-- 3. add <section> whose class is "courses" here and move </section> to line 45 right above 6.sidebar -->
-<section class="courses">
+         </div>
+         <div class="container grey darken-3">
+<div class="row l12 m12 s12">
     
- <article>
 
- <h2>What is a disruptive technology?</h2>
+
+ <h2 class="textShadow">What is a disruptive technology?</h2>
+    </div>
+             <div class="row l12 m12 s12">
+            
  <p>In the last century, technology has evolved at lightning speed, 
      and new ways of interfacing with our world are being developed every day.
      Disruptive technologies are at the center of this change. 
      They disrupt the norm and push us into the future. 
      One of the most influential disruptive technologies is virtual reality.
 </p>
+             </div>
      
-     
-      <figure>
- <img src="images/woman.jpeg" width=912 height= 500 alt="main image"/>
+   <div class="col l6 m6 s6 center-align">
+ <img src="images/woman.jpeg" width=912 height= 500 alt="main image">
   <figcaption><a href="https://www.pexels.com/photo/woman-wearing-virtual-reality-headset-4389739/" style="color:lightblue">Photo by Darlene Alderson from Pexels</a></figcaption>
 
- </figure>
- </article>
+</div>
 
-    <!-- 4. add the code for the first <article> for the first course by seeing the instruction-->
- <article>
+   
+
  
- <h2>What is Virtual Reality?</h2>
+ <h2 class="textShadow">What is Virtual Reality?</h2>
  <p>Virtual reality (VR) creates entirely new ways of experiencing three-dimensional
      space. Through the VR headset, the wearer can experience a world crafted by
      artists and designers as if it is real. This technology has grown out across 
      many industries. Click ‘VR Info’ to learn more.</p>
- 
- </article>
- </section>
-    <!-- 5. remove the comment symbol below to add the second <article> for the secound course  -->
-     
-     
-
-    <!-- 6. add sidebar here using <aside> tag and move </aside> to line 66 right above 9.add footer-->
-
-    <!-- 7. add the first <article> inside <aside></aside>  -->
-	<aside>
+              </div>
  
 
 
-    <!-- 8. remove the comment symbol below to add the second <article> code -->
-        <br>
-        <br>
+            
+ 
+    </body>
         
-        	
-             </aside>
+  
     <!-- 9. add footer here --> 
-     <footer class="page-footer">
-          <div class="container">
+	 <footer class="magenta" class="page-footer">
+          <div class="container magenta">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
@@ -118,23 +134,21 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="ContactUs.html" >Contact Us</a></li>
-                  <li><a class="grey-text text-lighten-3" href="AboutUs.html" >About Us</a></li>
-                  <li><a class="grey-text text-lighten-3" href="FAQ.html" >FAQ</a></li>
-                  <li><a class="grey-text text-lighten-3" href="information.html">Information</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container">
+            <div class="container magenta">
             © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-          </div>
+         </div>
         </footer>
-    </div>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-</body> 
+
 
 </html>

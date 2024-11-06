@@ -1,0 +1,61 @@
+block{
+    display: block;
+    align-content:center;
+    margin: 0px;
+    background-color: #404040;
+}
+body {
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 1px;
+    background: url("images/bgpattern.png"); 
+}
+@font-face{
+    font-family: Rubik Mono One;
+    src: url('RubikMonoOne-Regular.ttf');
+}
+
+/* header */
+
+
+.textShadow{
+    text-shadow: 2px 2px 3px black;
+}
+
+h1 {
+    font-weight: 800;
+    font-family: 'Rubik Mono One'; color: aqua;
+text-align: center;
+    font-size: 50px
+}
+ h3, h4 {
+     font-weight: normal;
+    font-family: 'Courier New'; color: white;
+    text-align: center;
+}
+p{
+    font-weight: normal;
+    font-family: 'Courier New'; color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2{
+    font-weight: bolder;
+    font-family: 'Courier New'; color: white;
+    text-align: center;
+    font-size: 30px;
+}    
+.magenta{
+    background-color: magenta;
+}
+.magenta-text{
+    color: magenta;
+}
+h3 {
+    color: #fe00ff;
+    font-weight: 600;
+    font-size: 20px
+}
+    p {font-family: Merriweather, serif;
+        font-size: 20px} 
