@@ -27,24 +27,29 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
       
-    
-      <script>
-    $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('.slider').slider();
-            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
-            $('.scrollspy').scrollSpy()
-        });
-    });
 
-    </script>
     <style>
-        .brand-logo img {height: 64px;}
+            .brand-logo img {height: 64px;}
+ 
 
     </style>
 </head>
-
 <body>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script>
+         $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
+            $('.scrollspy').scrollSpy();
+             $('.collapsible').collapsible();
+        });
+      $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>
+    
+    
     <div class="wrapper">
 
     <!-- 2. add <header> for image/navigation bar here. see the instruction to add the code -->
