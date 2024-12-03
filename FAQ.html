@@ -36,27 +36,23 @@
             $('.scrollspy').scrollSpy()
         });
 	function toggle() {
-            //toggle + and - symbols
-            if (this.getAttribute("class") == "plus") {
-                this.setAttribute("class", "minus");
-            } else {
-                this.setAttribute("class", "plus");
-            }
-            //toggle the open and close state of the answer section in the FAQ 
-            if (this.nextElementSibling.getAttribute("class") == "closed") {
-                this.nextElementSibling.setAttribute("class", "open");
-            } else {
-                this.nextElementSibling.setAttribute("class", "closed");
-            }
-        }
-	window.onload = function() {
-            //Find all h5 tags in the HTML and store them in the h5s array variable. 
-            let h5s = document.getElementById("faqs").getElementsByTagName("h5");
-            //Run a loop to check whether an h2 tag (i.e., a FAQ question) is clicked. If it is clicked, call the toggle function. 
-            for (let i = 0; i < h5s.length; i++) {
-                h5s[i].onclick = toggle;
-            }
-	    }
+	     //toggle + and - symbols
+	     if(this.getAttribute("class") == "plus") {
+	              this.setAttribute("class", "minus"); } 
+	     else {this.setAttribute("class", "plus");}
+	    //toggle the open and close state of the answer section in the FAQ 
+	     if(this.nextElementSibling.getAttribute("class")=="closed"){
+	 this.nextElementSibling.setAttribute("class", "open");}
+	     else{this.nextElementSibling.setAttribute("class", "closed");}
+	}
+
+	window.onload = function() {  
+	   let h2s = document.getElementById("faqs").getElementsByTagName("h2");
+	   for(i=0; i<h2s.length;i++) {
+	       h2s[i].onclick = toggle;
+	   }
+	      }
+
     </script>
 
     <style>
