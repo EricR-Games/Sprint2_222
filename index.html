@@ -45,6 +45,28 @@
       $(document).ready(function(){
     $('.datepicker').datepicker();
   });
+
+function swap(evt) { 
+         // Replace the current large image with the image from the clicked thumbnail. 
+document.getElementById("Original").src = this.getAttribute("href") 
+         //document.getElementById("image").setAttribute("src", this.getAttribute("href") 
+         // Replace the current caption with the title from the clicked thumbnail. 
+document.getElementById("caption").innerHTML= this.getAttribute("title");  
+ 
+        //Cancel the default action of a click event for hyperlinked items.   
+        //if(!evt) {evt=window.event;}  
+if(evt.preventDefault) {evt.preventDefault();} 
+else {evt.returnValue=false;}     
+}         
+ 
+window.onload = function() { 
+       // Find all a tags in the HTML and store them in the images array variable.  
+        let images = document.getElementById("womengallery").getElementsByTagName("a");    
+       //Run a loop to check whether a <a> tag (i.e., a thumbnail image) is clicked. If it is clicked, call the swap function.  
+        for(let i=0; i <images.length;i++) { 
+             images[i].onclick = swap; 
+        } 
+} 
 </script>
     
     
@@ -102,7 +124,16 @@
      
    <div class="col l6 m6 s6 center-align">
 	   <div class"row l12 l12 l12">
- <img class= "responsive-img" src="images/woman.jpeg" width=912 height= 500 alt="main image">
+ <ul id="womengallery"> 
+	   <li><img class= "responsive-img" src="images/woman.jpeg" width=912 height= 500 alt="main image"></li>
+	   <li><img class="responsive-img" src="images/OrangeWoman.jpg" width=912 height=500></li>
+	   <li><img class="responsive-img" src="images/HomoSapian(F).jpg" width=912 height=500 ></li>
+	   <li><img class="responsive-img" src="images/Women.jpg" width=912 height=500></li>
+	   <li><img class="responsive-img" src="images/WomenBrun.jpg" width=912 height=500></li>
+	   </ul>         
+	    <p><img src="images/woman.jpg" width =500px height=300px alt="" id="Original"></p>
+	   </div>
+  <figcaption><a href="https://www.pexels.com/photo/woman-wearing-virtual-reality-headset-4389739/" style="color:lightblue">Photo by Darlene Alderson from Pexels</a></figcaption>
 	   </div>
   <figcaption><a href="https://www.pexels.com/photo/woman-wearing-virtual-reality-headset-4389739/" style="color:lightblue">Photo by Darlene Alderson from Pexels</a></figcaption>
 
