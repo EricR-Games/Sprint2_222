@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>About Us - Benny & The Jets</title>
+    <title>FAQ - Benny & The Jets</title>
     
     <!--baseline css-->
     <link rel="stylesheet" href="home.css">
@@ -26,7 +26,8 @@
             
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-    <script>  	function toggle() {
+    <script>  	
+	function toggle() {
             //toggle + and - symbols
             if (this.getAttribute("class") == "plus") {
                 this.setAttribute("class", "minus");
@@ -40,6 +41,14 @@
                 this.nextElementSibling.setAttribute("class", "closed");
             }
         }
+	window.onload = function() {
+            //Find all h5 tags in the HTML and store them in the h5s array variable. 
+            let h5s = document.getElementById("faqs").getElementsByTagName("h5");
+            //Run a loop to check whether an h2 tag (i.e., a FAQ question) is clicked. If it is clicked, call the toggle function. 
+            for (let i = 0; i < h5s.length; i++) {
+                h5s[i].onclick = toggle;
+            }
+	    }
     </script>
 
     <style>
