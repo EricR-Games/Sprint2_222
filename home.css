@@ -65,3 +65,15 @@ h3 {
     margin-left: auto;
     margin-right: auto; 
 }
+
+h2.plus {
+    background: url(images/plus.png) no-repeat left center;
+    background-position: 5%;
+}
+h2.minus {
+    background: url(images/minus.png) no-repeat left center;
+    background-position: 5%;
+}
+div.closed {display: none;}
+div.open {display: block;}
+
