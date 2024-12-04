@@ -26,7 +26,19 @@
             
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-      
+     
+     <script>
+window.onload = function () {    
+     let links = document.getElementById("image_list").getElementsByTagName("a");
+     let count = 0;
+     let timer = setInterval(function () { 
+               count = (count + 1) % links.length;
+               document.getElementById("slideshowimage").src = links[count].href;
+               document.getElementById("caption").innerHTML =links[count].title;}, 2000);
+}
+
+     </script>
+    
 
     <style>
  .brand-logo img {height: 64px;}
@@ -85,75 +97,23 @@
     
         <h2 class="textShadow">Meet Ben-E & The Jets!</h2>
 
-       <section class="slider z-depth-4">
-        <ul class="slides z-depth-4">
-            <li>
-                <img src="Head Shots IMS222/p1.jpeg" > 
-                <div class="caption center-align">
-                    <h1>AJ Hathaway</h1>
-                    <h5 class="light magenta-text">Colorblind</h5>
-                    
-                </div>
-            </li>
-            <li>
-                <img src="Head Shots IMS222/p2.jpg"> <!-- random image -->
-                <div class="caption left-align">
-                    <h1>Ben Oesterly</h1>
-                    <h5 class="light magenta-text">I am a drummer.</h5>
-                    
-
-                </div>
-            </li>
-            <li>
-                <img class="responsive-img" src="Head Shots IMS222/p3.JPG"> <!-- random image -->
-                <div class="caption right-align">
-                    <h1>Benedicta Gyan</h1>
-                    <h5 class="light magenta-text">I love reading thriller/horror books.</h5>
-                    
-                </div>
-            </li>
-            <li>
-                <img src="Head Shots IMS222/p4.jpeg"> <!-- random image -->
-                <div class="caption center-align">
-                    <h1>Christian Tarzia</h1>
-                    <h5 class="light magenta-text">Might Not Exist.</h5>
-                    
-                </div>
-            </li>
-            <li>
-                <img src="Head Shots IMS222/p4.jpeg"> <!-- random image -->
-                <div class="caption right-align">
-                    <h1>Christian Tarzia Again</h1>
-                    <h5 class="light magenta-text">Still Might Not Exist.</h5>
-                    
-                </div>
-            </li>
-            <li>
-                <img src="Head Shots IMS222/p5.jpg"> <!-- random image -->
-                <div class="caption left-align">
-                    <h1>Drew Brown</h1>
-                    <h5 class="light magenta-text">I've worn glasses since the first grade.</h5>
-                   
-                </div>
-            </li>
-            <li>
-                <img src="Head Shots IMS222/p6.jpg"> <!-- random image -->
-                <div class="caption right-align">
-                    <h1>Eric Rademacher</h1>
-                    <h5 class="light magenta-text">I've sung in choirs since 6th grade.</h5>
-                   
-                </div>
-            </li>
-            <li>
-                <img src="Head Shots IMS222/p7.jpeg"> <!-- random image -->
-                <div class="caption center-align">
-                    <h1>Nolan Blume</h1>
-                    <h5 class="light magenta-text">My first job was working at a ski shop.</h5>
-                    
-                </div>
-            </li>
-            
-        </ul>
+      
+         
+       
+                 <ul id="image_list">
+                 <li><a href="images/Benedicta%20Gyan.jpg" title="Bene Gyan"></a></li>
+                 <li><a href="images/Christian.jpeg" title="Chrstian Tarzia*"></a></li>
+                 <li><a href="images/Ben%20Oesterly.jpg" title="Ben Oesterly"></a></li>
+                 <li><a href="images/Drew%20Brown.jpg" title="Drew Brown"></a></li>
+                 <li><a href="images/Nolan%20Blume.jpeg" title="Nolan Blume"></a></li>
+                 <li><a href="images/AJ%20Hathaway.jpeg" title="AJ Hathaway"></a></li>
+                 <li><a href="images/Eric%20Rademacher.jpg" title="Eric Rademacher"></a></li>
+                 <li><a href="images/woman.jpeg" title="Woman.jpeg"></a></li>
+             </ul>
+             <h2 id="caption">Bene Gyan</h2>
+             <p>
+                 <img src="images/Benedicta%20Gyan.jpg" alt="" id="slideshowimage">
+             </p>
     </section>
     
    <!--<div class="container">
