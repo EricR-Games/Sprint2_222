@@ -76,7 +76,6 @@ h3 {
 #faqs p {padding-left: 50px; }
 #faqs h5 { padding-left: 50px; line-height: 40px; }
 
-
 #faqs h5.plus {
 	background: url(../images/plus.png) no-repeat left center;
 }
@@ -85,9 +84,12 @@ h3 {
     background-size: 30px 30px;
 }
 
-div.closed {display: none;}
-div.open {display: block;}
-
+div.closed {
+	display: none;
+}
+div.open {
+	display: block;
+}
 
 li {
     padding-right: 10px;
