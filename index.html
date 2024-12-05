@@ -48,7 +48,7 @@
 
 function swap(evt) { 
          // Replace the current large image with the image from the clicked thumbnail. 
-document.getElementById("Original").src = this.getAttribute("href") 
+document.getElementById("Original").src = this.getAttribute("src") 
          //document.getElementById("image").setAttribute("src", this.getAttribute("href") 
          // Replace the current caption with the title from the clicked thumbnail. 
 document.getElementById("caption").innerHTML= this.getAttribute("title");  
@@ -132,11 +132,11 @@ window.onload = function() {
 </div>
 <div>
        <ul id="womengallery"> 
-	   <li><img class= "responsive-img" src="images/woman.jpeg" width=60px height= 40px alt="main image"></li>
-	   <li><img class="responsive-img" src="images/OrangeWoman.jpg" width=60px height=40px></li>
-	   <li><img class="responsive-img" src="images/HomoSapian(F).jpg" width=60px height=40px ></li>
-	   <li><img class="responsive-img" src="images/Women.jpg" width=60px height=40px></li>
-	   <li><img class="responsive-img" src="images/WomenBrun.jpg" width=60px height=40px></li>
+	   <li><a class= "responsive-img" src="images/woman.jpeg" width=60px height= 40px alt="main image"></li>
+	   <li><a class="responsive-img" src="images/OrangeWoman.jpg" width=60px height=40px></li>
+	   <li><a class="responsive-img" src="images/HomoSapian(F).jpg" width=60px height=40px ></li>
+	   <li><a class="responsive-img" src="images/Women.jpg" width=60px height=40px></li>
+	   <li><a class="responsive-img" src="images/WomenBrun.jpg" width=60px height=40px></li>
 	   </ul>         
    </div>
    <!-- ^^^ MAKE SURE YOU USE <A></A> HERE W/ CSS CHANGES ^^^ -->
