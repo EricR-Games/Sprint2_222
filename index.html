@@ -61,7 +61,7 @@ else {evt.returnValue=false;}
  
 window.onload = function() { 
        // Find all a tags in the HTML and store them in the images array variable.  
-        let images = document.getElementById("womengallery").getElementsByTagName("a");    
+        let images = document.getElementById("womengallery").getElementsByTagName("img");    
        //Run a loop to check whether a <a> tag (i.e., a thumbnail image) is clicked. If it is clicked, call the swap function.  
         for(let i=0; i <images.length;i++) { 
              images[i].onclick = swap; 
