@@ -52,7 +52,40 @@
 	       h5s[i].onclick = toggle;
 	   }
 	      }
+	 function calculateCost() {
+            //get 3 inputs from 3 textboxes
+            let models = document.getElementById("models").value;
+            let accessory = document.getElementById("accessory").value;
+            let software = document.getElementById("software").value;
+            let totalCost = 0;
+            //calculation for gpa for Ohio
+            if (models == 'Apple Vision Pro'){
+                totalCost = 3500;
+            } else if (models == 'Meta Quest 3'){
+                totalCost = 500;
+            } else if (models == 'PlayStation VR2'){
+                totalCost = 550;
+            } else if (models == 'HTC Vive Pro 2'){
+                totalCost = 800;
+            }
 
+            if (accessory == 'y'){
+                totalCost += 200;
+            }
+            if (software == 'y'){
+                totalCost += 200;
+            }
+            document.getElementById("totalCost").value = totalCost;
+        }
+        
+        
+        function clearCost() {
+            document.getElementById("models").value = "";
+            document.getElementById("accessory").value = "";
+            document.getElementById("software").value = "";
+            document.getElementById("totalCost").value = "";
+            document.getElementById("models").focus();
+        }
     </script>
 
     <style>
@@ -135,7 +168,20 @@
 	            <h5 class="plus">Is VR expensive?</h5>
 	            <div class="closed">
 	                <p>Short answer, Yes. Longer answer: one must buy the hardware (the headset itself) which can typically be around $300 to $700. Then you must get the software that connects to the VR headset, this can be games or other such things.</p>
-	            </div>
+	            	<h1>Headset Costs</h1>
+                                <h4>Enter Headset Information</h4>
+                                <label for="models">Choose a Model (Apple Vision Pro, Meta Quest 3, PlayStation VR2, or HTC Vive Pro 2): </label>
+                                <input type="text" id="models"><br>
+                                <label for="accessory">Will you need additionaly accessories? y or n: </label>
+                                <input type="text" id="accessory"><br>
+                                <label for="software">Will you need additional software (ex: video games)? y or n: </label>
+                                <input type="text" id="software"><br>
+                                <label for="totalCost">Total Estimated Cost: </label>
+                                <input type="text" id="totalCost" disabled="disabled"><br>
+                                <label>&nbsp;</label>
+                                <input type="button" id="calculate" value="Calculate" onclick="calculateCost()">
+                                <input type="button" id="clear" value="Clear" onclick="clearCost()"><br>
+		    </div>
 
 	            <h5 class="plus">Is VR for children?</h5>
 	            <div class="closed">
