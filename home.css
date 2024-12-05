@@ -82,7 +82,13 @@ div.open {display: block;}
     width: 659px;
     border-right: 1px solid #eeeeee;}
 
-
+#faqs h5.plus {
+	background: url(../images/plus.png) no-repeat left center;
+}
+#faqs h5.minus {
+	background: url(../images/minus.png) no-repeat left center;
+    background-size: 30px 30px;
+}
 
 
 li {
