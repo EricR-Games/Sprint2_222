@@ -77,10 +77,10 @@ h3 {
 h5 { padding-left: 50px; line-height: 40px; }
 
 h5.plus {
-	background: url(../images/plus.png) no-repeat left center;
+	background: url(images/plus.png) no-repeat left center;
 }
 h5.minus {
-	background: url(../images/minus.png) no-repeat left center;
+	background: url(images/minus.png) no-repeat left center;
     background-size: 30px 30px;
 }
 
