@@ -66,16 +66,6 @@ h3 {
     margin-right: auto; 
 }
 
-h2.plus {
-    background: url(images/plus.png) no-repeat left center;
-    background-position: 5%;
-}
-h2.minus {
-    background: url(images/minus.png) no-repeat left center;
-    background-position: 5%;
-}
-div.closed {display: none;}
-div.open {display: block;}
 
 #gallery {
     float: left;
@@ -95,6 +85,8 @@ div.open {display: block;}
     background-size: 30px 30px;
 }
 
+div.closed {display: none;}
+div.open {display: block;}
 
 
 li {
